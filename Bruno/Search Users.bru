@@ -5,9 +5,15 @@ meta {
 }
 
 get {
-  url: http://localhost:5089/test/search-users
+  url: http://localhost:5089/test/search-users?username=Iron&age=56&email=@mail
   body: none
   auth: inherit
+}
+
+params:query {
+  username: Iron
+  age: 56
+  email: @mail
 }
 
 body:json {
