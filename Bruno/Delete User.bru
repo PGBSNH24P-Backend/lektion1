@@ -1,0 +1,18 @@
+meta {
+  name: Delete User
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:5089/test/delete-user/a436be3a-4520-422c-9ed6-7a4602b3fca6
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "Ironman",
+    "password": "avengers"
+  }
+}

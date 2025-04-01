@@ -1,0 +1,18 @@
+meta {
+  name: Search Users
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:5089/test/search-users
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "Ironman",
+    "password": "avengers"
+  }
+}
